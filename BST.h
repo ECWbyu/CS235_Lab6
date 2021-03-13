@@ -4,7 +4,6 @@
 class BST: public BSTInterface {
 private:
     Node* root;
-    int size;
     bool addAt(int data, Node* node);
 public:
     BST();

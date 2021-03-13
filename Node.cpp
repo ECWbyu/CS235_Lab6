@@ -2,11 +2,17 @@
 using namespace std;
 
 Node::Node() {
-
+    cout << leftChild << ' ';
+    cout << rightChild << endl;
 }
 
 Node::Node(int startData) {
     data = startData;
+    cout << leftChild << ' ';
+    cout << rightChild << ": ";
+    cout << data << endl;
+    leftChild = NULL;
+    rightChild = NULL;
 }
 
 Node::~Node() {
@@ -38,10 +44,10 @@ Node*& Node::getRightChildRaw() {
     return rightChild;
 }
 
-void Node::setLeftChild(Node *&newLeft) {
+void Node::setLeftChild(Node *& newLeft) {
     leftChild = newLeft;
 }
 
-void Node::setRightChild(Node *&newRight) {
+void Node::setRightChild(Node *& newRight) {
     rightChild = newRight;
 }

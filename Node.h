@@ -37,6 +37,6 @@ public:
 
     Node*& getLeftChildRaw();
     Node*& getRightChildRaw();
-    void setLeftChild(Node*& newLeft);
-    void setRightChild(Node*& newRight);
+    void setLeftChild(Node *& newLeft);
+    void setRightChild(Node *& newRight);
 };
